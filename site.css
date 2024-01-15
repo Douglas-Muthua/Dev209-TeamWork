@@ -4,18 +4,3 @@
     font-size: 150%;
 }
 
-#warning{
-    color:red;
-    font-weight: 900;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}

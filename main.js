@@ -1,57 +1,21 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+let x = 0
+let storage = []
+do{
+    let firstWord_Question = window.prompt("Input First Word");
 
-    document.getElementById("buttonAdd").addEventListener("click", function (textbox1, textbox2) {
-        var firstNumber = document.getElementById("textbox1").value;
-        var secondNumber = document.getElementById("textbox2").value;
+    let secondWord_Question = window.prompt("Input Second Word");
 
-        var answer = Number(firstNumber) + Number(secondNumber);
+    let thirdWord_Question = window.prompt("Input Third Word");
 
-        document.getElementById("answer_box").innerHTML = Number(answer);
-    });
-});
+    storage.push(firstWord_Question, secondWord_Question,thirdWord_Question)
 
-document.addEventListener("DOMContentLoaded", function (event) {
+    x+1
 
-    document.getElementById("buttonSubtract").addEventListener("click", function (textbox1, textbox2) {
-        var firstNumber = document.getElementById("textbox1").value;
-        var secondNumber = document.getElementById("textbox2").value;
 
-        var answer = Number(firstNumber) - Number(secondNumber);
 
-        document.getElementById("answer_box").innerHTML = Number(answer);
-    });
-});
+}
+while(x =0)
 
-document.addEventListener("DOMContentLoaded", function (event) {
-
-    document.getElementById("buttonMultiply").addEventListener("click", function (textbox1, textbox2) {
-        var firstNumber = document.getElementById("textbox1").value;
-        var secondNumber = document.getElementById("textbox2").value;
-
-        var answer = Number(firstNumber) * Number(secondNumber);
-
-        document.getElementById("answer_box").innerHTML = Number(answer);
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function (event) {
-
-    document.getElementById("buttonDivide").addEventListener("click", function (textbox1, textbox2) {
-        var firstNumber = document.getElementById("textbox1").value;
-        var secondNumber = document.getElementById("textbox2").value;
-
-        var answer = Number(firstNumber) / Number(secondNumber);
-
-        
-
-        if (secondNumber == 0){
-            document.getElementById("warning").innerHTML = "YOU CAN NOT DIVIDE BY ZERO"
-
-        }
-        else{
-
-            document.getElementById("answer_box").innerHTML = Number(answer);
-
-        }
-    });
-});
+document.getElementById('firstWord').innerHTML = storage[0];
+document.getElementById('SecondWord').innerHTML = storage[1];
+document.getElementById('ThirdWord').innerHTML = storage[2];
