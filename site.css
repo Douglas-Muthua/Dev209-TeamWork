@@ -4,3 +4,14 @@
     font-size: 150%;
 }
 
+#section1{
+    display: none;
+}
+
+#section2{
+    display: none;
+}
+
+#swapBtn{
+    display: none;
+}
