@@ -14,6 +14,8 @@ function swapLetters(oneWord){
     return oneWord.charAt(oneWord.length - 1) + oneWord.substring(1, oneWord.length - 1) + oneWord.charAt(0); 
 }
 
+let newArr = storage.map(swapLetters);
+
 function toggleDisplay(){
     if(section1.style.display == 'block'){
         section1.style.display = 'none';
@@ -29,9 +31,9 @@ document.getElementById('firstWord').innerHTML = storage[0];
 document.getElementById('SecondWord').innerHTML = storage[1];
 document.getElementById('ThirdWord').innerHTML = storage[2];
 
-document.getElementById('firstWord1').innerHTML = swapLetters(storage[0]);
-document.getElementById('SecondWord1').innerHTML = swapLetters(storage[1]);
-document.getElementById('ThirdWord1').innerHTML = swapLetters(storage[2]);
+document.getElementById('firstWord1').innerHTML = newArr[0];
+document.getElementById('SecondWord1').innerHTML = newArr[1];
+document.getElementById('ThirdWord1').innerHTML = newArr[2];
 
 section1.style.display = 'block';
 button.style.display = 'block';
